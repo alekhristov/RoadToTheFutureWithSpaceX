@@ -2,13 +2,15 @@
 <html>
     <head>
         <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
         <title>SpaceX</title>
-        <link rel="stylesheet" href="./bower_components/bootstrap/dist/css/bootstrap.css"></link>
+        <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css"></link>
+        <!-- <link rel="stylesheet" href="app/styles/main.css"></link> -->
     </head>
 
     <body>
-        <nav class="navbar navbar-expand-lg navbar-light bg-light">
-          <a class="navbar-brand" href="#">RoadToTheFutureWithSpaceX</a>
+        <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+          <a class="navbar-brand" href="#">SpaceX</a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
           </button>
@@ -27,7 +29,7 @@
 
                   <li class="nav-item dropdown">
                     <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                      Dropdown
+                      Additional Info
                     </a>
                     <div class="dropdown-menu" aria-labelledby="navbarDropdown">
                       <a class="dropdown-item" href="#">Action</a>
@@ -40,6 +42,14 @@
             </div>
         </nav>
 
+        <div class="container-fluid">
+            <img class="img-fluid" src="app/images/SpaceXBackground.jpg">
+
+            <div id="mainId">
+            </div>
+        </div>
+
+        <script src="./bower_components/jquery/dist/jquery.js"></script>
         <script src="./bower_components/bootstrap/dist/js/bootstrap.js"></script>
     </body>
 </html>
