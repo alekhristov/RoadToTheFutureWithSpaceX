@@ -1,7 +1,7 @@
 const visualiseHome = () => {
     $.get(config.companyInfoApi)
         .then((result) => {
-            $('#wrapper').html($(`
+            $('#request').html($(`
             <div>
                     <h1>Company name: ${result.name}</h1>
                     <h1>Founder: ${result.founder}</h1>
@@ -15,7 +15,7 @@ const visualiseHome = () => {
             `));
         })
         .catch(function (error) {
-            $('#wrapper')
+            $('#request')
                 .html($(`<h2>An Error has Ocurred</h2>`));
         });
 }

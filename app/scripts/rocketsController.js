@@ -8,11 +8,11 @@ const visualiseRockets = () => {
                 rocketsData += `<h1>Cost per launch: ${rocket.cost_per_launch}</h1>`;
             }
             rocketsData += '</div>';
-            $('#wrapper').html(rocketsData);
+            $('#request').html(rocketsData);
         })
 
         .catch(function (error) {
-            $('#wrapper')
+            $('#request')
             .html($(`<h2>An Error has Ocurred</h2>`));
         });
 }
