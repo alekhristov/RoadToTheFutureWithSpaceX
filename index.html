@@ -19,13 +19,13 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav mr-auto">
                     <li class="nav-item active">
-                      <a class="nav-link" href="#">Home</span></a>
+                      <a id="home" class="nav-link" href="#">Home</span></a>
                     </li>
                     <li class="nav-item">
                       <a class="nav-link" href="#">Launches</a>
                     </li>
                     <li class="nav-item">
-                      <a class="nav-link" href="#">Rockets</a>
+                      <a id="rockets" class="nav-link" href="#">Rockets</a>
                     </li>
 
                     <li class="nav-item dropdown">
@@ -45,11 +45,15 @@
 
         <div id="wrapper">
             <div class="container">
-                <!-- insert dynamic content here  -->
+                <div id="request">
+                </div>
             </div>
         </div>
 
         <script src="bower_components/jquery/dist/jquery.js"></script>
         <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+        <script src="app/scripts/services/service.js"></script>
+        <script src="app\scripts\home-controller.js"></script>
+        <script src="app\scripts\rockets-controller.js"></script>
     </body>
 </html>
