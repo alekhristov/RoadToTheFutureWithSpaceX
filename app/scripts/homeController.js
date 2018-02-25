@@ -1,8 +1,14 @@
 $(function () {
-    $('#home').on('click', () => {
+    $('#home, #spaceX').on('click', () => {
         visualiseHome();
     })
 })
+
+// $(function () {
+//     $('#spaceX').on('click', () => {
+//         visualiseHome();
+//     })
+// })
 
 function visualiseHome() {
     $.get(config.companyInfoApi)
