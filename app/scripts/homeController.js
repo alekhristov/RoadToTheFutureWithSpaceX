@@ -10,6 +10,7 @@ function visualiseHome() {
             $('#request').html($(`
             <div>
             <h1 class="home-header"> ${result.name}</h1>
+            <img src="http://www.spacex.com/sites/all/themes/spacex2012/logo.png" alt="">
             <div class="container">
             <p class="text-style">${result.summary}</p>
             <h2 style="text-align:center;">Some random header!</h2>

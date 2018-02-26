@@ -2,7 +2,7 @@ body {
   width: 100%;
   height: auto;
   background:
-    /* linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), */
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
     url('../images/SpaceXDark.jpg');
   background-position: center top;
   background-size: cover;
@@ -29,11 +29,13 @@ body {
 }
  h3 {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 .text-style {
   font-size: 1.2em;  
   text-align: justify;
   font-weight: 700;
+  color: #8D99AE;
 }
 .cols-style {
   padding-top: 5em;
@@ -42,7 +44,7 @@ body {
   padding-bottom: 15em;
 }
 .text-end {
-  text-align: end
+  text-align: end;
 }
 .launch-header {
   color:#343a40;
@@ -57,4 +59,23 @@ body {
   text-align: center;
   padding-top: 2em;
   
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index: 1000;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+}
+.navbar li a:hover {
+  background: #ddd;
+  color: #333 !important;
 }
