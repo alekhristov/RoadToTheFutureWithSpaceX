@@ -2,7 +2,7 @@ $(function () {
     $('#rockets').on('click', () => {
         $.get(config.rocketsApi)
             .then((result) => {
-                console.log(result);
+                
                 let rocketsData = '<div><h2 class="home-header">Random Header</h2><div class="row">';
 
                 for (rocket of result) {

@@ -1,26 +1,28 @@
 $(function () {
     $('#upcomingLaunches').on('click', () => {
         $.get(config.launchesApi)
-            .then((result) => {
-                console.log(result);
-                let launchesData = '<div class="col">';
+            .then((result) => {                
+                let launchesData = '<div class="row"><div class="col-md-12 cols-style margin"><h2 class="launch-header">Are you ready to go on a journey into Space?</h2><img src="app/images/starman.jpg" alt="" class="img-fluid  img-width"><h1 class="launch-slogan">Here is your chance!<br>Here are all upcoming SpaceX launches: </h1></div> ';
 
                 for (launch of result) {
-                    launchesData += `<h1>Rocket name: ${launch.flight_number}</h1>`;
+                    launchesData += `<div class="col-md-6 cols-style"><h3>Rocket name: ${launch.flight_number}</h3>`;
                     
                     let date = new Date(launch.launch_date_utc);
                     let gmtIndex = date.toUTCString().indexOf('GMT');
                     let parsedDate = date.toUTCString().substring(0, gmtIndex - 1);
 
-                    launchesData += `<h1>Date: ${parsedDate}</h1>`;
-                    launchesData += `<h1>Rocket: ${launch.rocket.rocket_name}</h1>`;
-                    launchesData += `<h1>Launch site: ${launch.launch_site.site_name_long}</h1>`;
+                    launchesData += `<h3>Date: ${parsedDate}</h3>`;
+                    launchesData += `<h3>Rocket: ${launch.rocket.rocket_name}</h3>`;
+                    launchesData += `<h3>Launch site: ${launch.launch_site.site_name_long}</h3>`;
 
                     if (launch.details !== null) {
-                        launchesData += `<p>Details: ${launch.details}<p>`;
+                        launchesData += `<h3>Details: ${launch.details}<h3></div>`;
+                    }
+                    else {
+                        launchesData += `</div>`
                     }
                 }
-                launchesData += '</div>';
+                launchesData += '</div></div>';
                 $('#request').html(launchesData);
             })
 
