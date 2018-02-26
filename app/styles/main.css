@@ -1,7 +1,13 @@
 body {
   width: 100%;
   height: auto;
+<<<<<<< HEAD
   background: url('../images/SpaceXDark.jpg');
+=======
+  background:
+    linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+    url('../images/SpaceXDark.jpg');
+>>>>>>> ceb85c95b0afe6569b24d25d882537a7b7dd58fa
   background-position: center top;
   background-size: cover;
   background-repeat: no-repeat;
@@ -32,6 +38,7 @@ body {
 
 h3 {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
 
 
@@ -39,6 +46,7 @@ h3 {
   font-size: 1.2em;
   text-align: justify;
   font-weight: 700;
+  color: #8D99AE;
 }
 
 .cols-style {
@@ -50,7 +58,7 @@ h3 {
 }
 
 .text-end {
-  text-align: end
+  text-align: end;
 }
 
 .launch-header {
@@ -67,4 +75,27 @@ h3 {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-align: center;
   padding-top: 2em;
+<<<<<<< HEAD
+=======
+  
+}
+.navbar {
+  overflow: hidden;
+  background-color: #333;
+  position: fixed; /* Set the navbar to fixed position */
+  top: 0; /* Position the navbar at the top of the page */
+  width: 100%; /* Full width */
+  z-index: 1000;
+}
+.navbar a {
+  float: left;
+  display: block;
+  color: #f2f2f2;
+  text-align: center;
+  text-decoration: none;
+}
+.navbar li a:hover {
+  background: #ddd;
+  color: #333 !important;
+>>>>>>> ceb85c95b0afe6569b24d25d882537a7b7dd58fa
 }
