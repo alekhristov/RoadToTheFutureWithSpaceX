@@ -124,3 +124,7 @@ a {
   color: #8D99AE;
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
 }
+
+.img-rocket{
+  width: 85%;
+}

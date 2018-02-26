@@ -4,7 +4,7 @@ var rocketDetailsController = (function () {
         $('#request').html($(`
             <div class="row padding">
                 <div class="col-md-6">
-                    <img src="app/images/${rocket.id}.jpg" alt="" class="img-fluid rocket-details">
+                    <img src="app/images/${rocket.id}.jpg" alt="" class="img-fluid rocket-details img-rocket">
                 </div>
                 <div class="col-md-6 rocket-details">
                     <h4>Name: ${rocket.name}</h4>
