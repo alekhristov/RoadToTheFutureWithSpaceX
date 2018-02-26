@@ -8,7 +8,7 @@ var rocketsController = (function () {
                 for (rocket of result) {
                     rocketsData += `<div class="col-md-4 cols-style"><a href="#" onclick="visualizeRocketDetails(rocket)"><img src="app/images/${rocket.id}.jpg" alt="" class="img-fluid img-hover"></a>`
                     rocketsData += `<h3>Rocket name: ${rocket.name}</h3>`;
-                    rocketsData += `<h3>Cost per launch: ${rocket.cost_per_launch}</h3></div>`;
+                    rocketsData += `<h3>Cost per launch: $${rocket.cost_per_launch}</h3></div>`;
                 }
                 rocketsData += '</div> </div>';
                 $('#request').html(rocketsData);
