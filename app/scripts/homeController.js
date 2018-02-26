@@ -1,10 +1,10 @@
 $(function () {
     $('#home, #spaceX').on('click', () => {
-        visualiseHome();
+        visualizeHome();
     })
 })
 
-function visualiseHome() {
+function visualizeHome() {
     $.get(config.companyInfoApi)
         .then((result) => {
             $('#request').html($(`
@@ -17,16 +17,16 @@ function visualiseHome() {
              </div>
     <div class="row">
     <div class="col-md-6 cols-style">
-          <img src="app/images/elonMusk.jpg" alt="" class="img-fluid">           
+          <img src="app/images/elonMusk.jpg" alt="" class="img-fluid">
             </div>
     <div class="col-md-6 cols-style">
     <h3>CEO: ${result.ceo}</h3>
     <h3>Founder: ${result.founder}</h3>
     <h3>Founded: ${result.founded}</h3>
-    </div>         
+    </div>
            <div class="col-md-6 cols-style">
-           <h3 class="text-end">Employees: ${result.employees}</h3>       
-           
+           <h3 class="text-end">Employees: ${result.employees}</h3>
+
            </div>
            <div class="col-md-6 cols-style">
             <img src="app/images/employees.jpg" alt="" class="img-fluid">
@@ -37,7 +37,7 @@ function visualiseHome() {
             <div class="col-md-6 cols-style">
             <h3>Vehicles: ${result.vehicles}</h3>
             <h3>Headquarters: <br>Address: ${result.headquarters.address} <br>City: ${result.headquarters.city} <br>State:${result.headquarters.state}</h3>
-            
+
             </div>
         </div>
         </div>
@@ -48,4 +48,3 @@ function visualiseHome() {
                 .html($(`<h2>An Error has Ocurred</h2>`));
         });
 }
-

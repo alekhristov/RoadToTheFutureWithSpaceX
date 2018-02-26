@@ -8,13 +8,16 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
 }
+
 .img-hover:hover {
   transform: scale(1.15);
   transition: 0.3s;
 }
+
 #spaceX {
   font: 400 2em/0.8 'Cookie', Helvetica, sans-serif;
 }
+
 .home-header {
   color:#343a40;
   text-align: center;
@@ -22,39 +25,48 @@ body {
   padding-bottom: 0.535em;
   padding-top: 0.53em;
   font: 400 130px/0.8 'Cookie', Helvetica, sans-serif;
-  text-shadow: 10px 10px 10px rgba(0,0,0,0.3); 
+  text-shadow: 10px 10px 10px rgba(0,0,0,0.3);
 }
+
 .margin {
   margin:0px auto !important;
 }
- h3 {
+
+h3 {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
 }
+
+
 .text-style {
-  font-size: 1.2em;  
+  font-size: 1.2em;
   text-align: justify;
   font-weight: 700;
 }
+
 .cols-style {
   padding-top: 5em;
 }
+
 .cols-style:last-child {
   padding-bottom: 15em;
 }
+
 .text-end {
   text-align: end
 }
+
 .launch-header {
   color:#343a40;
-  text-align: center;  
+  text-align: center;
   font: 400 6em 'Cookie', Helvetica, sans-serif;
 }
+
 .img-width {
   width:100% !important;
 }
+
 .launch-slogan {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-align: center;
   padding-top: 2em;
-  
 }
