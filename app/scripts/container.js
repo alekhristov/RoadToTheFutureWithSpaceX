@@ -1,1 +1,1 @@
-$(document).ready(visualiseHome());
+$(document).ready(visualizeHome());
