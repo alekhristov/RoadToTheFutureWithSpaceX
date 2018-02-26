@@ -3,7 +3,7 @@ var rocketsController = (function () {
         $.get(config.rocketsApi)
             .then((result) => {
 
-                let rocketsData = '<div><h2 class="home-header">Random Header</h2><div class="row">';
+                let rocketsData = '<div><h2 class="rockets-header">Random Header</h2><div class="row">';
 
                 for (rocket of result) {
                     rocketsData += `<div class="col-md-4 cols-style"><a href="#" onclick="visualizeRocketDetails(rocket)"><img src="app/images/${rocket.id}.jpg" alt="" class="img-fluid img-hover"></a>`
