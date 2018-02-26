@@ -1,11 +1,11 @@
-$(function () {
-    $('#jokes').on('click', () => {
+var jokesController = (function () {
+    var visualizeJokeController = function () {
         $.get(config.jokeApi)
             .then((result) => {
                 $('#request').html($(`
             <div>
             <h1>Some text here</h1>
-            <p>${result.setup} <br/>${result.punchline}</p>    
+            <p>${result.setup} <br/>${result.punchline}</p>
             </div>
             `));
         })
@@ -13,5 +13,9 @@ $(function () {
             $('#request')
             .html($(`<h2>An Error has Ocurred</h2>`));
         });
-    })
-})
+    };
+
+    return {
+        visualizeJokeController
+    }
+}) ();

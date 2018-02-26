@@ -1,12 +1,12 @@
-$(function () {
-    $('#upcomingLaunches').on('click', () => {
+var launchesController = (function () {
+    var visualizeLaunchesController = function () {
         $.get(config.launchesApi)
-            .then((result) => {                
+            .then((result) => {
                 let launchesData = '<div class="row"><div class="col-md-12 cols-style margin"><h2 class="launch-header">Are you ready to go on a journey into Space?</h2><img src="app/images/starman.jpg" alt="" class="img-fluid  img-width"><h1 class="launch-slogan">Here is your chance!<br>Here are all upcoming SpaceX launches: </h1></div> ';
 
                 for (launch of result) {
                     launchesData += `<div class="col-md-6 cols-style"><h3>Rocket name: ${launch.flight_number}</h3>`;
-                    
+
                     let date = new Date(launch.launch_date_utc);
                     let gmtIndex = date.toUTCString().indexOf('GMT');
                     let parsedDate = date.toUTCString().substring(0, gmtIndex - 1);
@@ -30,5 +30,9 @@ $(function () {
                 $('#request')
                     .html($(`<h2>An Error has Ocurred</h2>`));
             });
-    })
-})
+    }
+
+    return {
+        visualizeLaunchesController
+    }
+}) ();

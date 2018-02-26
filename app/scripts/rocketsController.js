@@ -1,5 +1,5 @@
-$(function () {
-    $('#rockets').on('click', () => {
+var rocketsController = (function () {
+    var visualizeRocketsController = function () {
         $.get(config.rocketsApi)
             .then((result) => {
 
@@ -18,5 +18,9 @@ $(function () {
                 $('#request')
                     .html($(`<h2>An Error has Ocurred</h2>`));
             });
-    })
-})
+    }
+
+    return {
+        visualizeRocketsController
+    }
+}) ();

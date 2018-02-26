@@ -1,1 +1,1 @@
-$(document).ready(visualizeHome());
+$(document).ready(homeController.visualizeHomeController());
