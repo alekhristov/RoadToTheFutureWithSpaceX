@@ -118,3 +118,9 @@ a {
 .img-rocket{
   padding-bottom: 1em;
 }
+
+.rocket-details{
+  margin-top: 4em;
+  color: #8D99AE;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
