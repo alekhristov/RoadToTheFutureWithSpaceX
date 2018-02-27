@@ -25,7 +25,6 @@ const launchesController = (() => {
                 launchesData += '</div></div>';
                 $('#request').html(launchesData);
             })
-
             .catch(function (error) {
                 $('#request')
                     .html($(`<h2>An Error has Ocurred</h2>`));

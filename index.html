@@ -44,16 +44,35 @@
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Something else here</a>
                     </div>
-                    
+
                 </li>
             </ul>
             <ul class="navbar-nav navbar-right">
                 <li class="nav-item">
-                    <a id="jokes" class="nav-link" href="#/jokes">Random Joke</a>
+                    <a id="jokes" class="nav-link" data-toggle="modal" data-target="#jokesModal">Random Joke</a>
                 </li>
             </ul>
         </div>
     </nav>
+
+    <!-- Modal -->
+    <div class="modal fade" id="jokesModal" tabindex="-1" role="dialog" aria-labelledby="jokesModal" aria-hidden="true">
+      <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="title">Joke of the click</h5>
+            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+              <span aria-hidden="true">&times;</span>
+            </button>
+          </div>
+          <div id="replaceText" class="modal-body">
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <div id="wrapper">
         <div class="container">
@@ -72,6 +91,7 @@
     <script src="app/scripts/rocketsController.js"></script>
     <script src="app/scripts/rocketDetailsController.js"></script>
     <script src="app/scripts/jokeController.js"></script>
+    <script src="app/scripts/container.js"></script>
     <script src="app/app.js"></script>
 </body>
 </html>

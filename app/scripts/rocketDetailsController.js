@@ -12,7 +12,7 @@ const rocketDetailsController = (() => {
             <h4>Name: ${rocket.name}</h4>
             <h4>Cost: $${rocket.cost_per_launch}</h4>
             <h4>Country: ${rocket.country}</h4>
-            <h4>Description: ${rocket.description}</h4>   
+            <h4>Description: ${rocket.description}</h4>
             </div>
             </div>
             `));
@@ -21,7 +21,8 @@ const rocketDetailsController = (() => {
             $('#request')
                 .html($(`<h2>An Error has Ocurred</h2>`));
         }
-    }
+    };
+    
     return {
         visualizeRocketDetails
     }
