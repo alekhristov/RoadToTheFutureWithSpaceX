@@ -9,7 +9,7 @@
             rocketsController.visualizeRocketsController();
         });
 
-        this.get('#/upcomingLaunches', () => {
+        this.get('#/upcomingLaunches', function () {
             launchesController.visualizeLaunchesController();
         });
 

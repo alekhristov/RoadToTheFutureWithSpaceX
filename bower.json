@@ -1,7 +1,8 @@
 {
   "name": "teamWebApp",
   "authors": [
-    "Ivan Gargov <ivan.gargov@telelink.com>"
+    "Ivan Gargov <ivan.gargov@telelink.com>",
+    "Alek Hristov <alek.hristov@yahoo.com>"
   ],
   "description": "",
   "main": "index.html",
