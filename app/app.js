@@ -1,23 +1,23 @@
 (() => {
-    var app = $.sammy(function () {
+    var app = $.sammy(() => {
 
-        this.get('#/home', function () {
+        this.get('#/home', () => {
             homeController.visualizeHomeController();
         });
 
-        this.get('#/rockets', function () {
+        this.get('#/rockets', () => {
             rocketsController.visualizeRocketsController();
         });
 
-        this.get('#/upcomingLaunches', function () {
+        this.get('#/upcomingLaunches', () => {
             launchesController.visualizeLaunchesController();
         });
 
-        this.get('#/jokes', function () {
+        this.get('#/jokes', () => {
             jokesController.visualizeJokeController();
         });
 
-        this.get('#/rockets/:id', function () {
+        this.get('#/rockets/:id', () => {
             const rocketId = window.location.hash.split('/')[2];
 
             rocketDetailsController.visualizeRocketDetails(`${rocketId}`);
@@ -25,7 +25,7 @@
 
     })
 
-    $(function () {
+    $(() => {
         app.run();
     });
 })();

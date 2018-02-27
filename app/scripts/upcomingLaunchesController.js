@@ -35,4 +35,4 @@ const launchesController = (() => {
     return {
         visualizeLaunchesController
     }
-}) ();
+})();

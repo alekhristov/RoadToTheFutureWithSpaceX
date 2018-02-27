@@ -24,4 +24,4 @@ const rocketsController = (() => {
     return {
         visualizeRocketsController
     }
-}) ();
+})();

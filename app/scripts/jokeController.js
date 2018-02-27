@@ -8,14 +8,14 @@ const jokesController = (() => {
                     <p>${result.setup} <br/>${result.punchline}</p>
                 </div>
             `));
-        })
-        .catch(function (error) {
-            $('#request')
-            .html($(`<h2>An Error has Ocurred</h2>`));
-        });
+            })
+            .catch(function (error) {
+                $('#request')
+                    .html($(`<h2>An Error has Ocurred</h2>`));
+            });
     };
 
     return {
         visualizeJokeController
     }
-}) ();
+})();
