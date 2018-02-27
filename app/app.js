@@ -16,22 +16,16 @@
         this.get('#/jokes', function () {
             jokesController.visualizeJokeController();
         });
-      
-        this.get('#/rockets/falcon1', function () {
-            rocketDetailsController.visualizeRocketDetails('falcon1');
-        });
-      
-        this.get('#/rockets/falcon9', function () {
-            rocketDetailsController.visualizeRocketDetails('falcon9');
-        });
-      
-        this.get('#/rockets/falconheavy', function () {
-            rocketDetailsController.visualizeRocketDetails('falconheavy');
-        });
 
+        this.get('#/rockets/:id', function () {
+            const rocketId = window.location.hash.split('/')[2];
+            console.log(rocketId);
+            rocketDetailsController.visualizeRocketDetails(`${rocketId}`);
+        });
+        
     })
 
-    $(function () {
-        app.run();
-    });
+$(function () {
+    app.run();
+});
 }) ();
