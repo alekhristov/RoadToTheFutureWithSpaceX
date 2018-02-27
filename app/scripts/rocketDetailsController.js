@@ -1,5 +1,5 @@
-var rocketDetailsController = (function () {
-    var visualizeRocketDetails = function (rocketId) {
+const rocketDetailsController = (() => {
+    const visualizeRocketDetails = (rocketId) => {
 
         try {
             var rocket = container.database.rockets.find(r => r.id === rocketId);

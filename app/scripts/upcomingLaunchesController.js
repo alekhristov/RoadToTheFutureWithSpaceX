@@ -1,5 +1,5 @@
-var launchesController = (function () {
-    var visualizeLaunchesController = function () {
+const launchesController = (() => {
+    const visualizeLaunchesController = () => {
         $.get(config.launchesApi)
             .then((result) => {
                 let launchesData = '<div class="row"><div class="col-md-12 cols-style margin"><h2 class="launch-header">Are you ready to go on a journey into Space?</h2><img src="app/images/starman.jpg" alt="" class="img-fluid  img-width"><h1 class="launch-slogan">Here is your chance!<br>Here are all upcoming SpaceX launches: </h1></div> ';

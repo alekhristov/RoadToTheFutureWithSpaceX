@@ -1,5 +1,5 @@
-var rocketsController = (function () {
-    var visualizeRocketsController = function () {
+const rocketsController = (() => {
+    const visualizeRocketsController = () => {
         $.get(config.rocketsApi)
             .then((result) => {
                 container.database.rockets = result;
