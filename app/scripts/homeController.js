@@ -1,4 +1,4 @@
-const homeController = ( () => {
+const homeController = (() => {
     const visualizeHomeController = () => {
         $.get(config.companyInfoApi)
             .then((result) => {
@@ -45,4 +45,4 @@ const homeController = ( () => {
     return {
         visualizeHomeController
     }
-}) ();
+})();

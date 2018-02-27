@@ -19,4 +19,4 @@ const rocketsController = (() => {
     return {
         visualizeRocketsController
     }
-}) ();
+})();
