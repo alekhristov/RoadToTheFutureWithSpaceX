@@ -1,6 +1,6 @@
 const container = (function () {
     $(document).ready(homeController.visualizeHomeController());
-    const database = databaseFunc()
+    const database = databaseFunc();
 
     return {
         database
