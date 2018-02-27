@@ -23,6 +23,9 @@
             rocketDetailsController.visualizeRocketDetails(`${rocketId}`);
         });
 
+        this.get('#/aboutus', function () {
+            aboutUsController.visualizeAboutUs();
+        });
     })
 
     $(function () {
