@@ -1,4 +1,4 @@
-body {
+  body {
   width: 100%;
   height: auto;
   background: url('../images/spaceXDark.jpg');
@@ -16,23 +16,23 @@ body {
   font: 400 2em/0.8 'Cookie', Helvetica, sans-serif;
 }
 
-.home-header {
-  color:#343a40;
+.rockets-header {
+  color:#8D99AE;
   text-align: center;
   font-size: 9em;
-  padding-bottom: 0.535em;
-  padding-top: 0.53em;
+  padding-top: 0.8em;
   font: 400 130px/0.8 'Cookie', Helvetica, sans-serif;
   text-shadow: 10px 10px 10px rgba(0,0,0,0.3);
 }
 
 .margin {
-  margin:0px auto !important;
+  margin: 0px auto !important;
 }
 
 h3 {
   font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
   text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+  color:#8D99AE;
 }
 
 .text-style {
@@ -55,8 +55,10 @@ h3 {
 }
 
 .launch-header {
-  color:#343a40;
+  color:#8D99AE;
   text-align: center;
+  font-size: 9em;
+  margin-bottom: 0.5em;
   font: 400 6em 'Cookie', Helvetica, sans-serif;
 }
 
@@ -65,19 +67,19 @@ h3 {
 }
 
 .launch-slogan {
-  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  font-family: 'Cookie', Helvetica, sans-serif;
   text-align: center;
-  padding-top: 2em;
-
+  padding-top: 1em;
+  font-size: 4.5em;
 }
 
 .navbar {
-  overflow: hidden;
   background-color: #333;
   position: fixed; /* Set the navbar to fixed position */
   top: 0; /* Position the navbar at the top of the page */
   width: 100%; /* Full width */
   z-index: 1000;
+  margin-bottom: 8em;
 }
 
 .navbar a {
@@ -91,4 +93,38 @@ h3 {
 .navbar li a:hover {
   background: #ddd;
   color: #333 !important;
+}
+
+.logo {
+  margin-top: 6em;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.header{
+  text-align: center;
+  color: #8D99AE
+}
+
+.img-border{
+border: 3px solid beige;
+}
+
+a {
+  color: #8D99AE;
+}
+
+.img-rocket{
+  padding-bottom: 1em;
+}
+
+.rocket-details{
+  margin-top: 4em;
+  color: #8D99AE;
+  text-shadow: -1px -1px 0 black, 1px -1px 0 black, -1px 1px 0 black, 1px 1px 0 black;
+}
+
+.img-rocket{
+  width: 85%;
 }
