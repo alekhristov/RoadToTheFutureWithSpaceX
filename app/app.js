@@ -19,10 +19,10 @@
 
         this.get('#/rockets/:id', function () {
             const rocketId = window.location.hash.split('/')[2];
-            console.log(rocketId);
+
             rocketDetailsController.visualizeRocketDetails(`${rocketId}`);
         });
-        
+
     })
 
 $(function () {
