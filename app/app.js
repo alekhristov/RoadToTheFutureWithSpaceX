@@ -1,11 +1,11 @@
-(() => {
-    var app = $.sammy(() => {
+(function () {
+    var app = $.sammy(function () {
 
-        this.get('#/home', () => {
+        this.get('#/home', function () {
             homeController.visualizeHomeController();
         });
 
-        this.get('#/rockets', () => {
+        this.get('#/rockets', function () {
             rocketsController.visualizeRocketsController();
         });
 
@@ -13,19 +13,19 @@
             launchesController.visualizeLaunchesController();
         });
 
-        this.get('#/jokes', () => {
+        this.get('#/jokes', function () {
             jokesController.visualizeJokeController();
         });
 
-        this.get('#/rockets/:id', () => {
-            const rocketId = window.location.hash.split('/')[2];
+        this.get('#/rockets/:id', function () {
+            const rocketId = this.params['id'];
 
             rocketDetailsController.visualizeRocketDetails(`${rocketId}`);
         });
 
     })
 
-    $(() => {
+    $(function () {
         app.run();
     });
 })();
