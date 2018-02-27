@@ -1,5 +1,5 @@
-var jokesController = (function () {
-    var visualizeJokeController = function () {
+const jokesController = (() => {
+    const visualizeJokeController = () => {
         $.get(config.jokeApi)
             .then((result) => {
                 $('#request').html($(`

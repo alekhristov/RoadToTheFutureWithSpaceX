@@ -1,4 +1,4 @@
-(function () {
+(() => {
     var app = $.sammy(function () {
 
         this.get('#/home', function () {
@@ -30,7 +30,7 @@
     })
 >>>>>>> de504e1d2b2dc3655607e41261051e03b3602ebe
 
-$(function () {
-    app.run();
-});
-}) ();
+    $(function () {
+        app.run();
+    });
+})();

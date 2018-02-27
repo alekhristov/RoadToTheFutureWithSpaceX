@@ -1,5 +1,5 @@
-var homeController = (function () {
-    var visualizeHomeController = function () {
+const homeController = ( () => {
+    const visualizeHomeController = () => {
         $.get(config.companyInfoApi)
             .then((result) => {
                 $('#request').html($(`

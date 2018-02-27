@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 var rocketsController = (function () {
     var visualizeRocketsController = function () {
 <<<<<<< HEAD
@@ -12,6 +13,10 @@ var rocketsController = (function () {
 
         });
 =======
+=======
+const rocketsController = (() => {
+    const visualizeRocketsController = () => {
+>>>>>>> 4690e593993d596229e490cc6488067a65ff0523
         $.get(config.rocketsApi)
             .then((result) => {
                 container.database.rockets = result;
