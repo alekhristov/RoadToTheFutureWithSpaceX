@@ -2,15 +2,18 @@
   "name": "SpaceX",
   "authors": [
     "Ivan Gargov <ivan.gargov@telelink.com>",
-    "Alek Hristov <alek.hristov@yahoo.com>"
+	"Alek Hristov <alek.hristov@yahoo.com>"
   ],
   "description": "",
   "main": "index.html",
   "license": "MIT",
   "homepage": "",
   "ignore": [
-    "**/.*",
-    "bower_components",
+  	"**/.*",
+	"node_modules",
+	"bower_components",
+	"test",
+	"tests"
   ],
   "dependencies": {
     "bootstrap": "^4.0.0",
