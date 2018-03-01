@@ -13,13 +13,8 @@ const rocketsController = (() => {
                 }
                 rocketsData += '</div> </div>';
                 $('#request').html(rocketsData);
-            })
-            .catch(function (error) {
-                $('#request')
-                    .html($(`<h2>An Error has Ocurred</h2>`));
             });
     }
-    
 
     return {
         visualizeRocketsController
