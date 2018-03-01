@@ -29,6 +29,6 @@
     })
 
     $(function () {
-        app.run();
+        app.run('#/home');
     });
 })();
